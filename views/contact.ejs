@@ -1,0 +1,89 @@
+<%layout("layout/BoilerPlate.ejs") %>
+
+
+    <body>
+        <div class="container py-5">
+
+            <div class=" row mt-3 d-flex justify-content-between">
+                <div class="col-sm-12 col-md-6 col-lg-4  p-3">
+                    <h2 class="fs-6 fw-bold">Contact Info :</h2>
+                    <P style="font-size: 15px; font-weight: 400; letter-spacing: -0.45px;" class="">
+                        We are available
+                        for questions, feedback, or collaboration opportunities. <br> <br>
+                        Let us know how we can help!</P>
+                    <P style="font-size: 15px; font-weight: 500; letter-spacing: -0.45px;" class="">
+                        You can also contact
+                        us at contact <b>kanishgour0@gmail.com</b> for subject related queery.</P>
+
+                    <img src="/assets/ProfiePic.jpg" class="card-img-top profile  mb-5" alt="" srcset="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-8 p-3">
+
+                    <!-- Form -->
+                    <form action="/contact/data" method="post">
+                        <!-- name -->
+                        <div class="row mb-3">
+                            <label for="name" class=" col-md-12 col-sm-2  col-form-label">Name </label>
+                            <div class=" col-md-12 col-sm-10">
+                                <input type="text" class="form-control" name="name" id="name">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="row mb-3">
+                            <label for="email" class=" col-md-12 col-sm-2  col-form-label">Email </label>
+                            <div class=" col-md-12 col-sm-10">
+                                <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="row mb-3">
+                            <label for="phone" class=" col-md-12 col-sm-2  col-form-label">Mobile</label>
+                            <div class=" col-md-12 col-sm-10 input-group">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Code</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Australia +61</a></li>
+                                    <li><a class="dropdown-item" href="#">Brazil +55</a></li>
+                                    <li><a class="dropdown-item" href="#">Canada +1</a></li>
+                                    <li><a class="dropdown-item" href="#">China +86</a></li>
+                                    <li><a class="dropdown-item" href="#">France +33</a></li>
+                                    <li><a class="dropdown-item" href="#">Germany +49</a></li>
+                                    <li><a class="dropdown-item" href="#">India +91</a></li>
+                                    <li><a class="dropdown-item" href="#">Japan +81</a></li>
+                                    <li><a class="dropdown-item" href="#">Mexico +52</a></li>
+                                    <li><a class="dropdown-item" href="#">Russia +7</a></li>
+                                    <li><a class="dropdown-item" href="#">Saudi Arabia +966</a></li>
+                                    <li><a class="dropdown-item" href="#">South Africa +27</a></li>
+                                    <li><a class="dropdown-item" href="#">UAE +971</a></li>
+                                    <li><a class="dropdown-item" href="#">United Kingdom +44</a></li>
+                                    <li><a class="dropdown-item" href="#">United States +1</a></li>
+                                </ul>
+
+                                <input type="number" class="form-control" name="mobile" min="1000000000"
+                                    max="9999999999" id="phone">
+
+                            </div>
+                        </div>
+                        <!-- message -->
+                        <div class="row mb-3">
+                            <label for="message" class="col-md-12 col-sm-3 col-form-label">Message </label>
+                            <div class="col-md-12 col-sm-9">
+                                <input type="text" class="form-control" name="message" id="message">
+                            </div>
+                        </div>
+                        <button type="submit" class=" btn btn-outline-success ">Submit</button>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="m-5"></div>
+
+        <div class="m-5"></div>
+
+        </div>
+
+    </body>

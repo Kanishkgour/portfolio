@@ -1,0 +1,22 @@
+{
+  "name": "kanishk-portfolio-website",
+  "version": "1.0.0",
+  "description": "Updated Portfolio For My Customers",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Kanishk Gour",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.15.1"
+  }
+}

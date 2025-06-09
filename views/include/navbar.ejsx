@@ -1,0 +1,31 @@
+<header>
+    <nav>
+        <div class="left">
+            <!-- <img class="logo" src="code.png" alt=""> -->
+            <i class="fa-solid fa-code logo"></i>
+            <div class="name">Kanishk</div>
+        </div>
+        
+        <div class="right">
+
+            <ul>
+                <a class="anchor" href="/home">
+                    <li>Home</li>
+                </a>
+                <a class="anchor" href="/about">
+                    <li>About</li>
+                </a>
+                <a class="anchor" href="/project">
+                    <li>Project</li>
+                </a>
+                <!-- <a class="anchor" href="/services">
+                            <li>Services</li>
+                        </a> -->
+                <a class="anchor" href="/contact">
+                    <li>Contact-Me</li>
+                </a>
+            </ul>
+
+        </div>
+    </nav>
+</header>
