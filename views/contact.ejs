@@ -20,19 +20,19 @@
                 <div class="col-sm-12 col-md-6 col-lg-8 p-3">
 
                     <!-- Form -->
-                    <form action="/contact/data" method="post">
+                    <form action="/contact/data" method="post" novalidate class="needs-validation">
                         <!-- name -->
                         <div class="row mb-3">
                             <label for="name" class=" col-md-12 col-sm-2  col-form-label">Name </label>
                             <div class=" col-md-12 col-sm-10">
-                                <input type="text" class="form-control" name="name" id="name">
+                                <input type="text" class="form-control" name="name" id="name" required>
                             </div>
                         </div>
                         <!-- Email -->
                         <div class="row mb-3">
                             <label for="email" class=" col-md-12 col-sm-2  col-form-label">Email </label>
                             <div class=" col-md-12 col-sm-10">
-                                <input type="email" class="form-control" name="email" id="email">
+                                <input type="email" class="form-control" name="email" id="email" required>
                             </div>
                         </div>
                         <!-- Phone -->
@@ -59,8 +59,8 @@
                                     <li><a class="dropdown-item" href="#">United States +1</a></li>
                                 </ul>
 
-                                <input type="number" class="form-control" name="mobile" min="1000000000"
-                                    max="9999999999" id="phone">
+                                <input type="number" class="form-control" name="mobile" min="1"
+                                    max="9999999999" id="phone" required>
 
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                         <div class="row mb-3">
                             <label for="message" class="col-md-12 col-sm-3 col-form-label">Message </label>
                             <div class="col-md-12 col-sm-9">
-                                <input type="text" class="form-control" name="message" id="message">
+                                <input type="text" class="form-control" name="message" id="message" required>
                             </div>
                         </div>
                         <button type="submit" class=" btn btn-outline-success ">Submit</button>
@@ -87,3 +87,18 @@
         </div>
 
     </body>
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var forms = document.querySelectorAll(".needs-validation");
+
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener("submit", function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+        }, false);
+    });
+});
+</script>
