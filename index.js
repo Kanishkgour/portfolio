@@ -100,18 +100,31 @@ app.post("/contact/info", (req, res) => {
 });
 
 // 📚📚📚📚📚📚📚📚📚📚 project specific route
-app.post("/home/project/airbnb", (req, res, next) => {
-    res.send("Working on the project please wait for 2 days");
-})
-app.post("/home/project/zerodha", (req, res, next) => {
-    res.send("Working on the project please wait for 2 days");
-})
-app.post("/home/project/openai", (req, res, next) => {
-    res.send("Working on the project please wait for 2 days");
-})
-app.post("/home/project/amazon", (req, res, next) => {
-    res.send("Working on the project please wait for 2 days");
-})
+// app.post("/home/project/airbnb", (req, res, next) => {
+//     res.send("Working on the project please wait for 2 days");
+// })
+// app.post("/home/project/zerodha", (req, res, next) => {
+//     res.send("Working on the project please wait for 2 days");
+// })
+// app.post("/home/project/openai", (req, res, next) => {
+//     res.send("Working on the project please wait for 2 days");
+// })
+// app.post("/home/project/amazon", (req, res, next) => {
+//     res.send("Working on the project please wait for 2 days");
+// })
+
+
+const projectNames = ["airbnb", "zerodha", "openai", "amazon"];
+
+projectNames.forEach(project => {
+  app.post(`/home/project/${project}`, (req, res, next) => {
+    res.send(`Working on the ${project} project—I'll update you once it's ready.`);
+  });
+});
+
+
+
+
 // http://localhost:8080/home/project/airbnb
 // 📚📚📚📚📚📚📚📚📚📚
 
