@@ -119,6 +119,7 @@ const projectNames = ["airbnb", "zerodha", "openai", "amazon"];
 projectNames.forEach(project => {
   app.post(`/home/project/${project}`, (req, res, next) => {
     res.send(`Working on the ${project} project—I'll update you once it's ready.`);
+    res.send(`" I'm currently working on the ${project} I'll update you once it's ready."`);
   });
 });
 
