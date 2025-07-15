@@ -56,6 +56,9 @@ app.use((req, res, next) => {
 });
 
 // 🏠 Routes
+app.get("/", (req, res) => {
+    res.redirect("/home")
+});
 app.get("/home", (req, res) => {
     res.render("home.ejs");
 });
